@@ -30,10 +30,10 @@ const Header = () => {
                     <NavList />
                 </div>
                 <div className="hidden gap-2 lg:flex">
-                    <Button variant="text" size="sm" color="blue-gray">
+                    <Button size="sm" className="bg-primary rounded capitalize text-base">
                         Log In
                     </Button>
-                    <Button size="sm" className="bg-primary rounded">
+                    <Button size="sm" className="bg-primary rounded capitalize text-base">
                         Get Started
                     </Button>
                 </div>
@@ -57,7 +57,7 @@ const Header = () => {
                         Log In
                     </Button>
 
-                    <Button size="sm" className="bg-primary rounded" fullWidth>
+                    <Button size="sm" className="bg-primary rounded capitalize" fullWidth>
                         Get Started
                     </Button>
                 </div>
