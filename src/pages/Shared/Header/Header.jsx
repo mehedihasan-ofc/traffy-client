@@ -33,7 +33,7 @@ const Header = () => {
                     <Button variant="text" size="sm" color="blue-gray">
                         Log In
                     </Button>
-                    <Button size="sm" className="bg-primary rounded font-primary">
+                    <Button size="sm" className="bg-primary rounded">
                         Get Started
                     </Button>
                 </div>
@@ -57,7 +57,7 @@ const Header = () => {
                         Log In
                     </Button>
 
-                    <Button size="sm" className="bg-primary rounded font-primary" fullWidth>
+                    <Button size="sm" className="bg-primary rounded" fullWidth>
                         Get Started
                     </Button>
                 </div>

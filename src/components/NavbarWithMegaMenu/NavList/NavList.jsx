@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const NavList = () => {
     return (
-        <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row md:items-center lg:p-1 font-primary">
+        <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row md:items-center lg:p-1">
             {navigationBar.map((navbar) => (
                 navbar?.subMenus ? <NavListMenu navListMenuItems={navbar} key={navbar?.id} /> : (
                     <Link key={navbar?.id} to={navbar?.pathname}>

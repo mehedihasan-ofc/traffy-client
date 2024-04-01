@@ -46,7 +46,7 @@ const NavListMenu = ({ navListMenuItems }) => {
                 allowHover={true}
             >
                 <MenuHandler>
-                    <Typography as="div" variant="small" className="font-primary">
+                    <Typography as="div" variant="small">
                         <ListItem
                             className="font-normal text-sm flex items-center justify-between"
                             selected={isMenuOpen || isMobileMenuOpen}
