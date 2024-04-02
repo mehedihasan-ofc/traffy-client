@@ -4,7 +4,7 @@ import ServicesSlider from "../ServicesSlider/ServicesSlider";
 const ServicesBoard = ({ category }) => {
 
     return (
-        <div className="border border-gray-300 rounded-md p-3">
+        <div className="border border-gray-300 p-3">
 
             <div className="flex justify-between items-center">
                 <div>

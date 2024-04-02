@@ -1,7 +1,11 @@
 import FAQImg from "../../../assets/faq.jpg";
 import FaqAccordion from "../../../components/FaqAccordion/FaqAccordion";
+import { useGetFaqQuery } from "../../../features/faq/faqApi";
 
 const QuesAns = () => {
+
+    const { data: faq } = useGetFaqQuery();
+
     return (
         <div className="my-container">
 
@@ -10,7 +14,7 @@ const QuesAns = () => {
                     <img src={FAQImg} alt="" />
                 </div>
                 <div>
-                    <FaqAccordion />
+                    {faq?.map(singleFaq => <FaqAccordion key={singleFaq?._id} faq={singleFaq} />)}
                 </div>
             </div>
 
