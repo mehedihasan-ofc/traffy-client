@@ -8,12 +8,12 @@ const Blog = () => {
 
     return (
         <>
-            <PageCover title="Blog Page" />
+            <PageCover title="Our Latest Blog Posts" />
 
             <div className="my-container my-10">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                     {
-                        blogs?.map(blog => <BlogCard key={blog?._id} blog={blog} />)
+                        blogs?.map((blog, _idx) => <BlogCard key={blog?._id} blog={blog} index={_idx} />)
                     }
                 </div>
             </div>
