@@ -5,10 +5,15 @@ const blogsApi = traffyApi.injectEndpoints({
         getBlogs: builder.query({
             query: () => `/blogs`,
             providesTags: ["Main"]
+        }),
+        getBlogById: builder.query({
+            query: (id) => `/blogs/${id}`,
+            providesTags: ["Main"]
         })
     })
 })
 
 export const {
-    useGetBlogsQuery
+    useGetBlogsQuery,
+    useGetBlogByIdQuery
 } = blogsApi;
